@@ -65,7 +65,7 @@ This meant logistic regression (which can't handle missing values at all) had to
 | Logistic Regression | ~116K, scored borrowers only | 0.594 | 0.58 |
 | **XGBoost** | ~233K, full dataset | **0.612** | **0.62** |
 
-Both models are meaningfully weaker than Lending Club's — which lines up with having a much thinner feature set to work with. XGBoost's edge here likely comes mostly from being able to use the full dataset (including unscored borrowers), not just from being a fundamentally stronger algorithm.
+Both models are meaningfully weaker than Lending Club's which lines up with having a much thinner feature set to work with. XGBoost's edge here likely comes mostly from being able to use the full dataset (including unscored borrowers), not just from being a fundamentally stronger algorithm.
 
 ### SHAP findings
 Loan-to-value ratio came out as the single strongest predictor, and usefully, in exactly the direction theory predicts: higher LTV pushes toward higher risk. This is worth noting against the SQL project's finding, where the LTV bucket analysis showed an odd Mid > High reversal, which I attributed to the High-LTV bucket having a tiny sample (1,219 loans). SHAP, working off the full dataset rather than three coarse buckets, resolves that inconsistency and shows the expected relationship clearly.
