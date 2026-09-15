@@ -10,14 +10,14 @@ Same two-module structure as before: Lending Club (US, full application-time fea
 - Jupyter notebooks in VS Code
 
 ## Running this yourself
-1. Have the SQL project's database (`credit_risk_analysis_project`) set up and loaded as this project reads directly from it.
+1. Have the SQL project's database [credit_risk_analysis_project](https://github.com/Prerit-srivastava12/credit-risk-analysis-project) set up and loaded as this project reads directly from it.
 2. Set your own PostgreSQL password in the connection string before running, both notebooks use a placeholder (`YOUR_PASSWORD_HERE`) instead of real credentials.
-3. Open `credit_default_model_lending_club.ipynb`[credit_default_model_lending_club.ipynb] and `credit_default_model_lt_nbfc.ipynb` and run the cells top to bottom.
+3. Open [credit_default_model_lending_club.ipynb](credit_default_model_lending_club.ipynb) and [credit_default_model_lt_nbfc.ipynb](credit_default_model_lt_nbfc.ipynb) and run the cells top to bottom.
 
 ## Repo structure
 ```
-credit_default_model_lending_club.ipynb   -- Module 1: Lending Club
-credit_default_model_lt_nbfc.ipynb        -- Module 2: L&T NBFC
+credit_default_model_lending_club.ipynb  : Module 1: Lending Club
+credit_default_model_lt_nbfc.ipynb       : Module 2: L&T NBFC
 ```
 
 ---
